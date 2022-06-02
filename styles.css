@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --prime-color: #00a8e1;
+  --dark-color: #0f171e;
+}
+
+body {
+  color: rgb(233, 233, 233);
+  background-color: var(--dark-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.fadeIn {
+  animation: fade-in 3s 3s backwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h4 {
+  transition: all 2s ease-in-out;
+}
+
+h4,
+h6 {
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+  background-image: linear-gradient(180deg, #1b2530 0, rgba(27, 37, 48, 0.85));
+  padding: 16px 48px;
+}
+
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+a {
+  color: #79b8f3;
+}
+
+a:hover {
+  color: #90dffe;
+  text-decoration: none;
+}
+
+.prime-badge {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.infos-container {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(-52px);
+  /* background-color: #1b2530; */
+  padding: 48px 24px 24px;
+  background-image: linear-gradient(rgba(27, 37, 48, 0), rgb(27, 37, 48) 48px);
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+.play-btn:not(:hover) {
+  background: black !important;
+}
+
+.play-btn {
+  width: 36px;
+  height: 36px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-70px);
+  transition: opacity 0.4s 0.15s, transform 0.5s;
+}
+
+.play-btn:hover {
+  border: none;
+}
+
+.play-btn::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 2px;
+  margin: auto;
+  border-style: solid;
+  border-width: 7px 0 7px 12px;
+  border-color: transparent transparent transparent white;
+}
+
+.play-btn + h6 {
+  transform: translateX(-45px);
+  transition: transform 0.4s 0.1s;
+}
+
+.plus-btn {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transform: translateX(50px) rotate(160deg);
+  transition: transform 0.3s;
+}
+
+.plus-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  height: 2px;
+  margin: auto;
+}
+.plus-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 2px;
+  margin: auto;
+}
+
+.prime-title,
+.prime-title + h6,
+.infos-container > p,
+.infos-container .movie-footer {
+  opacity: 0;
+
+  transition: opacity 0.2s ease-in;
+}
+
+.prime-title {
+  transition-delay: 0.15s;
+}
+.prime-title + h6 {
+  transition-delay: 0.25s;
+}
+.infos-container > p {
+  transition-delay: 0.35s;
+}
+.infos-container .movie-footer {
+  transition-delay: 0.45s;
+}
+
+.prime-title {
+  color: var(--prime-color);
+}
+
+.prime-title + h6 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.infos-container > p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.infos-container .movie-footer {
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #9b9da7;
+}
+
+.infos-container .movie-footer > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.infos-container .movie-footer .bi:first-of-type {
+  font-size: 1.2rem;
+}
+.infos-container .movie-footer .bi:nth-of-type(2) {
+  font-size: 1.4rem;
+}
+
+.movie-card:hover .infos-container {
+  opacity: 1;
+  transform: translateY(-48px);
+}
+
+.movie-card:hover .prime-title,
+.movie-card:hover .prime-title + h6,
+.movie-card:hover .infos-container > p,
+.movie-card:hover .infos-container .movie-footer {
+  opacity: 1;
+}
+
+.movie-card:hover .play-btn,
+.movie-card:hover .play-btn + h6,
+.movie-card:hover .plus-btn {
+  opacity: 1;
+  transform: translateX(0px) rotate(0deg);
+}
+
+.gradient {
+  background: linear-gradient(270deg, #cddc39, #4caf50, #00bcd4);
+  background-size: 400%;
+  animation: gradientSlide 2s infinite;
+}
+
+@keyframes gradientSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.alert {
+  position: absolute;
+  top: 98px;
+  right: 10px;
+  color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s;
+}
+
+.alert.show {
+  opacity: 1;
+}

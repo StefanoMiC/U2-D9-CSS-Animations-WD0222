@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
+    <style>
+        /* .container-md {
+            background-color: black;
+            color: white;
+        } */
+
+        /* @media (min-width: 992px) {
+            .container-md {
+                display: block;
+            }
+        } */
+
+        @media (min-width: 576px) {
+            .btn-sm-inline-block {
+                display: inline-block !important;
+                width: initial;
+            }
+        }
+    </style>
+    <title>Bootstrap pt2</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4">
+        <div class="container-md">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Button trigger modal -->
+
+
+    <div id="first-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#first-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#first-carousel" data-slide-to="1"></li>
+            <li data-target="#first-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1653866113443-d1747ebe1b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                    class="d-block w-100" alt="..."
+                    style="max-height: 500px; object-fit: cover; object-position: bottom">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1653917139373-86b743f8c6f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    class="d-block w-100" alt="..." style="max-height: 500px; object-fit: cover; object-position: top">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1654007440611-4519f85d6d4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1611&q=80"
+                    class="d-block w-100" alt="..."
+                    style="max-height: 500px; object-fit: cover; object-position: bottom">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#first-carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#first-carousel" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+
+    <div class="container-md text-center text-md-right text-lg-left">
+        <div class="row justify-content-center">
+
+            <div class="col-12 order-2 order-sm-1 order-lg-2 col-sm-8 col-md-6 col-lg-5 mb-5 mb-md-0">
+                <h1 class="mt-4 mt-sm-0">Hello, Epicoders!</h1>
+                <p class="collapse show" id="collapseMe">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                    autem
+                    repudiandae ipsa
+                    sed
+                    quam omnis ipsam ad id corporis, molestias iusto consequuntur dolor perferendis minima
+                    blanditiis
+                    totam
+                    aliquid fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum qui animi fuga
+                    voluptate repellat iure aspernatur officia, natus nostrum neque nemo quaerat iusto accusantium
+                    porro,
+                    saepe
+                    suscipit voluptatum ab?
+                </p>
+                <div class="row mb-5">
+                    <div class="col-12 col-sm-6 col-md-3 col-xl-2 mb-2">
+                        <div class="bg-info"><i class="bi bi-apple"></i></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-xl-2 mb-2">
+                        <div class="bg-info"><i class="bi bi-windows"></i></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-xl-2 mb-2">
+                        <div class="bg-info"><i class="bi bi-youtube"></i></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-xl-2 mb-2">
+                        <div class="bg-info"><i class="bi bi-facebook" data-toggle="collapse"
+                                data-target="#collapseMe"></i></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-xl-2 d-none d-xl-block mb-2">
+                        <div class="bg-danger"><i class="bi bi-apple"></i></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-xl-2 d-none d-xl-block mb-2">
+                        <div class="bg-danger"><i class="bi bi-windows"></i></div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-block btn-sm-inline-block" data-toggle="modal"
+                    data-target="#exampleModal"><i class="bi bi-badge-4k-fill"></i> Primary</button>
+                <button type="button" class="btn btn-danger btn-block btn-sm-inline-block mt-0" data-toggle="modal"
+                    data-target="#exampleModal2"><i class="bi bi-badge-4k-fill"></i> Primary</button>
+            </div>
+            <div class="col-12 order-1 order-sm-2 order-lg-1 col-sm-10 col-md-6 col-lg-7">
+                <img src="https://images.unsplash.com/photo-1654002620977-a6cdacbbadba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    class="img-fluid w-100" data-toggle="collapse" data-target="#collapseMe">
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-auto">
+                <img src="https://images.unsplash.com/photo-1654023451875-223085c35eb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                    class="img-fluid w-100">
+            </div>
+            <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                autem
+                repudiandae ipsa
+                sed
+                quam omnis ipsam ad id corporis, molestias iusto consequuntur dolor perferendis minima blanditiis totam
+                aliquid fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum qui animi fuga
+                voluptate repellat iure aspernatur officia, natus nostrum neque nemo quaerat iusto accusantium porro,
+                saepe
+                suscipit voluptatum ab?
+            </div>
+        </div> -->
+        <!-- <div class="row">
+            <div class="col-auto">
+                <div style="width: 500px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                    autem
+                    repudiandae ipsa
+                    sed
+                    quam omnis ipsam ad id corporis, molestias iusto consequuntur dolor perferendis minima blanditiis
+                    totam
+                    aliquid fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum qui animi fuga
+                    voluptate repellat iure aspernatur officia, natus nostrum neque nemo quaerat iusto accusantium
+                    porro,
+                    saepe
+                    suscipit voluptatum ab?
+                </div>
+            </div>
+            <div class="col">
+                <img src="https://images.unsplash.com/photo-1654023451875-223085c35eb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                    class="img-fluid w-100">
+            </div>
+        </div> -->
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta sunt sed quae dignissimos consectetur
+            minima maiores exercitationem iste eius, qui aliquam modi velit cupiditate alias unde quam corporis debitis!
+        </h4>
+        <div class="row mx-n1">
+            <div class="col-3 px-1">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 px-1">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 px-1">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 px-1">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal"
+                        onclick="console.log('clicked')">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    !!!DANGER
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"
+                        onclick="console.log('clicked')">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
